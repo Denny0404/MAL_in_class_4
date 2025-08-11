@@ -1,0 +1,14 @@
+release_name: k8s-infra
+namespace: observability
+
+# CHANGE this to your TrueNAS SigNoz collector IP
+signoz_upstream_endpoint: "10.172.27.3:4317"
+signoz_upstream_insecure: true
+
+cluster_name: "vsphere-cluster"
+deployment_env: "prod"
+
+helm_repo_name: signoz
+helm_repo_url: "https://charts.signoz.io"
+chart_name: "signoz/k8s-infra"
+chart_version: ""   # leave blank for latest
